@@ -15,11 +15,14 @@ public class MathController {
         return convertToDouble(n1) + convertToDouble(n2);
     }
 
-    private Double convertToDouble(String n2) {
-        return 1D;
+    private Double convertToDouble(String strNumber) {
+        return Double.parseDouble(strNumber);
     }
 
-    private boolean isNumeric(String number) {
-        return false;
+    private boolean isNumeric(String strNumber) {
+        if(strNumber == null || strNumber.isEmpty()) return false;
+
+        String number = strNumber.replace(",",".");
+        return (number.matches("[-+]?[0-9]*\\.?[0-9]+"));
     }
 }
