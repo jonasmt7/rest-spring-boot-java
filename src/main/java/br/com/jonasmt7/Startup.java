@@ -1,4 +1,4 @@
-package br.com.jonasmt7.rest_spring_boot_java;
+package br.com.jonasmt7;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
