@@ -3,6 +3,8 @@ package br.com.jonasmt7.services;
 import br.com.jonasmt7.model.Person;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Logger;
 
@@ -19,4 +21,8 @@ public class PersonService {
         return person;
     }
 
+    public List<Person> findAll(){
+        List<Person> persons = new ArrayList<Person>();
+        return persons;
+    }
 }
